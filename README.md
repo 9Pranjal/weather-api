@@ -6,5 +6,5 @@
 ### ayodhya
 ![Screenshot](surat.png)
 
-###paris
+### paris
 ![Screenshot](paris.png)
