@@ -1,0 +1,153 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="main">
+        <div id="card">
+            <div class="search">
+                <input type="text" class="input-bar" placeholder="Enter city name">
+                <i class="ri-search-2-line"></i>
+            </div>
+            <div class="weather">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z" fill="rgba(210,146,1,1)"></path></svg>
+                <p class="city">Surat</p>
+                <p class="temp">30&#8451;</p>
+
+                <div class="data">
+                    <div class="humidity">
+                        <i class="ri-water-percent-line"></i>
+                        <p class="humid-val">67</p>
+                    </div>
+                    <div class="windspeed">
+                        <i class="ri-windy-line"></i>
+                        <p class="speedvalue">67 km/hr</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"> Made by <b>Pranjal</b>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Creative Weather App</title>
+</head>
+
+<body>
+
+    <!-- Floating Background -->
+    <div class="bg-circle circle1"></div>
+    <div class="bg-circle circle2"></div>
+    <div class="bg-circle circle3"></div>
+
+    <div id="main">
+
+        <div id="card">
+
+            <!-- Search -->
+            <div class="search">
+
+                <input
+                    type="text"
+                    class="input-bar"
+                    placeholder="Search your city..."
+                >
+
+                <button class="search-btn">
+                    <i class="ri-search-2-line"></i>
+                </button>
+
+            </div>
+
+            <!-- Loading -->
+            <div class="loading hidden">
+
+                <div class="loader"></div>
+
+                <p>Fetching Weather...</p>
+
+            </div>
+
+            <!-- Weather Section -->
+            <div class="weather">
+
+                <!-- Weather Icon -->
+                <img
+                    src="https://openweathermap.org/img/wn/01d@2x.png"
+                    class="weather-icon"
+                >
+
+                <!-- Temperature -->
+                <h1 class="temp">30°C</h1>
+
+                <!-- Weather Description -->
+                <p class="description">Clear Sky</p>
+
+                <!-- City -->
+                <h2 class="city">Surat</h2>
+
+                <!-- Country -->
+                <p class="country">India</p>
+
+    
+
+                <!-- Weather Cards -->
+                <div class="details">
+
+                    <div class="box">
+                        <i class="ri-water-percent-line"></i>
+                        <p>Humidity</p>
+                        <h3 class="humid-val">67%</h3>
+                    </div>
+
+                    <div class="box">
+                        <i class="ri-windy-line"></i>
+                        <p>Wind</p>
+                        <h3 class="speedvalue">12 km/h</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Error -->
+            <div class="error hidden">
+
+                <i class="ri-error-warning-line"></i>
+
+                <p>City not found!</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
